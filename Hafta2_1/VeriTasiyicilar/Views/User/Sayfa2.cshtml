@@ -1,0 +1,30 @@
+﻿@using VeriTasiyicilar.Models
+
+@model Tuple<int, string, Role, User>
+
+@{
+    ViewBag.Title = "Sayfa2";
+}
+
+<h2>Sayfa2</h2>
+
+<div class="alert-warning">@TempData["TDMessage"]</div>
+
+<div class="col-md-9">
+    <div class="list-group">
+        <div class="list-group-item">
+            @Model.Item1
+        </div>
+        <div class="list-group-item">
+            @Model.Item2
+        </div>
+        <div class="list-group-item">
+            @Model.Item3.Name
+        </div>
+        <div class="list-group-item">
+            @Model.Item4.FullName
+        </div>
+
+    </div>
+</div>
+

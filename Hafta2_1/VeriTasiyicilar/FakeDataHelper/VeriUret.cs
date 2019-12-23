@@ -29,5 +29,28 @@ namespace VeriTasiyicilar.FakeDataHelper
             return roles;
         }
 
+        public static List<Category> CreateCategoryList()
+        {
+            List<Category> kategoriler = new List<Category>();
+            kategoriler.Add(new Category { Id = 1, CategoryName = "Elektronik" });
+            kategoriler.Add(new Category { Id = 2, CategoryName = "Kitap" });
+            kategoriler.Add(new Category { Id = 3, CategoryName = "Mobilya" });
+            return kategoriler;
+        }
+
+        public static List<Product> CreateProductList()
+        {
+            List<Product> urunler = new List<Product>();
+            urunler.Add(new Product { Id = 1, ProductName = "Hesap Makinesi", CategoryId = 1 });
+            urunler.Add(new Product { Id = 2, ProductName = "Ölçü aleti", CategoryId = 1 });
+            urunler.Add(new Product { Id = 3, ProductName = "asp.net mvc kitabı", CategoryId = 2 });
+            urunler.Add(new Product { Id = 4, ProductName = "django framework kitabı", CategoryId = 2 });
+            urunler.Add(new Product { Id = 5, ProductName = "Sandalye", CategoryId = 3 });
+            urunler.Add(new Product { Id = 6, ProductName = "Koltuk", CategoryId = 3 });
+            return urunler;
+        }
+
+
+
     }
 }

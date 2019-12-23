@@ -1,0 +1,29 @@
+﻿@using VeriTasiyicilar.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="col-md-3">
+    <div class="list-group">
+        @foreach (var item in ViewData["Categories"] as IEnumerable<VeriTasiyicilar.Models.Category>)
+        {
+            <div class="list-group-item">
+                <a href="/User/FilterByCategory/@item.Id">@item.CategoryName</a>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="col-md-9">
+    <div class="list-group">
+        @foreach (var item in ViewData["Products"] as IEnumerable<VeriTasiyicilar.Models.Product>)
+        {
+            <div class="list-group-item">
+                <a href="/User/ProductDetail/@item.Id"> @item.ProductName</a>
+            </div>
+        }
+    </div>
+</div>
