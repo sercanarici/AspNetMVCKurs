@@ -1,0 +1,35 @@
+﻿@using VeriTasiyicilar.Models
+
+@model Product
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-12">
+        <div class="alert-warning text-center">TempData: @TempData["TDMessage"]</div>
+        <div class="alert-success text-center">Tempdata ve model kullanılarak oluşturuldu.</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Ürünler</h3>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Category Id</th>
+                <th>Ürün Adı</th>
+            </tr>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.CategoryId</td>
+                <td>@Model.ProductName</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+

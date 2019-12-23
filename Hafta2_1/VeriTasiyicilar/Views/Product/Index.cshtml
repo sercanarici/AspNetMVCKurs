@@ -4,26 +4,42 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<div class="col-md-3">
-    <div class="list-group">
-        @foreach (var item in ViewData["Categories"] as IEnumerable<VeriTasiyicilar.Models.Category>)
-        {
-            <div class="list-group-item">
-                <a href="/User/FilterByCategory/@item.Id">@item.CategoryName</a>
-            </div>
-        }
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-12">
+        <div class="alert-success text-center">ViewData kullanılarak oluşturuldu.</div>
     </div>
 </div>
 
-<div class="col-md-9">
-    <div class="list-group">
-        @foreach (var item in ViewData["Products"] as IEnumerable<VeriTasiyicilar.Models.Product>)
-        {
-            <div class="list-group-item">
-                <a href="/User/ProductDetail/@item.Id"> @item.ProductName</a>
-            </div>
-        }
+<div class="row">
+    <div class="col-md-3">
+        <h3>Kategoriler</h3>
+        <div class="list-group">
+            @foreach (var item in ViewData["Categories"] as IEnumerable<Category>)
+            {
+                <div class="list-group-item">
+                    <a href="/Product/FilterByCategory/@item.Id">@item.CategoryName</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <h3>Ürünler</h3>
+
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>İşlem</th>
+            </tr>
+            @foreach (var item in ViewData["Products"] as IEnumerable<Product>)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td><a href="/Product/Detail/@item.Id" class="btn btn-primary"> Detay</a></td>
+                </tr>
+            }
+        </table>
+
     </div>
 </div>
+

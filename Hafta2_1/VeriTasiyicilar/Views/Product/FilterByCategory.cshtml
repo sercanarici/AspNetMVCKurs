@@ -6,19 +6,30 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<div class="col-md-3">
-    <div class="alert-warning">@ViewBag["Kategori"]</div>
-</div>
-
-<div class="col-md-9">
-    <div class="list-group">
-        @foreach (var item in Model)
-        {
-            <div class="list-group-item">
-                <a href="/User/ProductDetail/@item.Id"> @item.ProductName</a>
-            </div>
-        }
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-12">
+        <div class="alert-success text-center">Viewbag ve Model kullanılarak oluşturuldu.</div>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>@ViewBag.Kategori kategorisine ait ürünler</h3>
+
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>İşlem</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td><a href="/Product/Detail/@item.Id" class="btn btn-primary"> Detay</a></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>
+

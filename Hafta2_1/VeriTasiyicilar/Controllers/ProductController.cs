@@ -18,6 +18,7 @@ namespace VeriTasiyicilar.Controllers
             ViewData["Products"] = urunler;
             ViewData["Categories"] = kategoriler;
 
+            TempData["TDMessage"] = "Index actionda oluşturuldu";
 
             return View();
         }
@@ -26,13 +27,19 @@ namespace VeriTasiyicilar.Controllers
         {
             var kategori = kategoriler.Find(x => x.Id == id);
             List<Product> urunFilter = urunler.Where(x => x.CategoryId == kategori.Id).ToList();
+
+            TempData["TDMessage"] = "FilterByCategory actionda oluşturuldu";
+
             ViewBag.Kategori = kategori.CategoryName;
             return View(urunFilter);
         }
 
-        public ActionResult ProductDetail(int id)
+        public ActionResult Detail(int id)
         {
-            return View();
+            var urun = urunler.Find(x => x.Id == id);
+            var data = TempData["TDMessage"];
+
+            return View(urun);
         }
     }
 }
