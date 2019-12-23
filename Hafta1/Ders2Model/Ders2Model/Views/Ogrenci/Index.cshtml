@@ -1,0 +1,33 @@
+﻿@using Ders2Model.Models
+
+@model Ogrenci
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Soyadı</th>
+            <th scope="col">Öğrenci No</th>
+            <th scope="col">Doğum Tarihi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">@Model.Id</th>
+            <td>@Model.Ad</td>
+            <td>@Model.Soyad</td>
+            <td>@Model.OgrenciNo</td>
+            <td>@Model.DogumTarihi</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+

@@ -1,0 +1,32 @@
+﻿@using VeriTasiyicilar.Models
+
+@model UserRoleViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="col-md-3">
+    <div class="list-group">
+        @foreach (var item in Model.Roles)
+        {
+            <div class="list-group-item">
+                <a href="/User/FilterByRole/@item.Id">@item.Name</a>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="col-md-9">
+    <div class="list-group">
+        @foreach (var item in Model.Users)
+        {
+            <div class="list-group-item">
+                @item.FullName / @item.Address
+            </div>
+
+        }
+    </div>
+</div>

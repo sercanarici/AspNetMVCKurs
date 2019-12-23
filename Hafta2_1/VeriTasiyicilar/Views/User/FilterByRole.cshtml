@@ -1,0 +1,30 @@
+﻿@using VeriTasiyicilar.Models
+
+@model  List<User>
+
+@{
+    ViewBag.Title = "FilterByRole";
+}
+
+<h2>FilterByRole</h2>
+
+<div class="alert-info">@ViewBag.Message</div>
+<div class="alert-success">@ViewBag.Count</div>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Addres</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.Email</td>
+            <td>@item.Address</td>
+            <td></td>
+        </tr>
+    }
+</table>

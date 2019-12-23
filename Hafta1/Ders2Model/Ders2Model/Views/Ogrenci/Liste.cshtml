@@ -1,0 +1,58 @@
+﻿@using Ders2Model.Models
+@model OgrenciViewModel
+
+@{
+    ViewBag.Title = "Liste";
+}
+
+<h2>Dersler</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ders Adı</th>
+            <th scope="col">Eğitmeni</th>
+            <th scope="col">Kredisi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Dersler)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.DersAdi</td>
+                <td>@item.Eğitmen</td>
+                <td>@item.Kredi</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<h2>Ogrenciler</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Soyadı</th>
+            <th scope="col">Öğrenci No</th>
+            <th scope="col">Doğum Tarihi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Ogrenciler)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Ad</td>
+                <td>@item.Soyad</td>
+                <td>@item.OgrenciNo</td>
+                <td>@item.DogumTarihi.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

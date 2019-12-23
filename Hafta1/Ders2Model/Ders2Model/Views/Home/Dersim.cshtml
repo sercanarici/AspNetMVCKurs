@@ -1,0 +1,31 @@
+﻿
+@using Ders2Model.Models
+
+@model Ders
+
+@{
+    ViewBag.Title = "Dersim";
+}
+
+<h2>Dersim</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ders Adı</th>
+            <th scope="col">Eğitmeni</th>
+            <th scope="col">Kredisi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">@Model.Id</th>
+            <td>@Model.DersAdi</td>
+            <td>@Model.Eğitmen</td>
+            <td>@Model.Kredi</td>
+        </tr>
+
+    </tbody>
+</table>
+
