@@ -1,0 +1,73 @@
+﻿@using RazorVeHtmlHelper.Models
+@model LoginViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3>Razor & Html Helpers</h3>
+
+@(1 + 2)
+
+@{
+    int sayi1 = 10;
+    int sayi2 = 24;
+    <h4>@(sayi1 + sayi2)</h4>
+    <h4>@@</h4>
+    <h4>@bol(sayi1, sayi2)</h4>
+}
+
+@{
+    double bol(double a, double b)
+    {
+
+        return a / b;
+    }
+}
+
+<h4> @sayi1 ve  @sayi2 arasında büyük olan: @(sayi1 > sayi2 ? sayi1 : sayi2) </h4>
+
+<div class="col-md-offset-9 col-md-3">
+    @Html.Action("Reklam", "Home")
+
+    @Html.ActionLink("ClickMe", "Liste", "Kategori", null, new { id = "btnTikla", @class = "btn btn-info" })
+
+</div>
+
+<hr />
+
+@Html.AntiForgeryToken()
+
+@Html.AttributeEncode("<input>")
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.CheckBox("chkFirst", true)
+    <hr />
+
+    @Html.TextBoxFor(x => x.Username)
+
+    <input type="text" name="Password" id="Password">
+
+    @Html.CheckBoxFor(x => x.RememberMe)
+
+
+    @Html.DisplayNameFor(x => x.DOB) // attributteki display name
+    @Html.NameFor(x => x.DOB) // property name
+    @Html.EditorFor(x => x.DOB)
+
+    @Html.Raw("<strong>hede hödö</strong>") //Html olmayan stringi html olarak render eder
+
+    <input type="submit" value="Kaydet">
+
+}
+
+@{
+    //Html.RenderAction("Reklam");
+    @Html.HiddenFor(x => x.Username);
+
+    @Html.DropDownList("il", ViewBag.Iller as List<SelectListItem>, new { @class = "form-control" })
+    @Html.DropDownList("il", new SelectList(ViewBag.Iller as List<SelectListItem>, "Value", "Text"), new { @class = "form-control" })
+
+}
