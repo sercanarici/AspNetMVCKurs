@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alcom", "Alcom\Alcom.csproj", "{FCDDEC84-50C6-413C-8DAB-6D65907C9841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCDDEC84-50C6-413C-8DAB-6D65907C9841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDDEC84-50C6-413C-8DAB-6D65907C9841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDDEC84-50C6-413C-8DAB-6D65907C9841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDDEC84-50C6-413C-8DAB-6D65907C9841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE0D14EB-B2F0-4CEA-9727-7F2D10E4AA6E}
+	EndGlobalSection
+EndGlobal
