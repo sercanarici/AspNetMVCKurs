@@ -142,3 +142,10 @@ D:\OneDrive\Repositories\AspNetMVCKurs\Hafta3_2\Alcom\obj\Debug\Alcom.csprojAsse
 D:\OneDrive\Repositories\AspNetMVCKurs\Hafta3_2\Alcom\obj\Debug\Alcom.csproj.CopyComplete
 D:\OneDrive\Repositories\AspNetMVCKurs\Hafta3_2\Alcom\obj\Debug\Alcom.dll
 D:\OneDrive\Repositories\AspNetMVCKurs\Hafta3_2\Alcom\obj\Debug\Alcom.pdb
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\Antlr3.Runtime.dll
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\Newtonsoft.Json.dll
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\System.Web.Optimization.dll
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\WebGrease.dll
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\Antlr3.Runtime.pdb
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\Newtonsoft.Json.xml
+Z:\Rsa\AspNetMVCKurs\Hafta3_2\Alcom\bin\System.Web.Optimization.xml

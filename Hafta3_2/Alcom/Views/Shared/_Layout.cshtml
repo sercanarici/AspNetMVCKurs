@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Furniture - Minimalist eCommerce HTML5 Template</title>
+    <title>@ViewBag.Title</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -271,9 +271,9 @@
                             <ul>
                                 <li><a href="#">Compare Products </a></li>
                                 <li><a href="#">Default welcome msg!</a></li>
-                                <li><a href="register.html">register</a></li>
+                                <li><a href="@Url.Action("Index","Register")">register</a></li>
                                 <li><a href="wishlist.html">My Wish List</a></li>
-                                <li><a href="login.html">Sign In </a></li>
+                                <li><a href="@Url.Action("Index","Login")">Sign In </a></li>
                             </ul>
                         </div>
                     </div>
