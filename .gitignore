@@ -1,5 +1,9 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
 /.vs
+Hafta6_2/Alcom/Alcom.BLL/bin/
+Hafta6_2/Alcom/Alcom.DAL/bin/
+Hafta6_2/Alcom/.vs/
+Hafta6_2/Alcom/Alcom.UI/bin/
