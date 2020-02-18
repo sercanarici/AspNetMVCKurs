@@ -1,0 +1,6 @@
+﻿@{
+    var msj = TempData["Mesaj"] as TempDataDictionary;
+    if (msj != null)
+    { <div class='@msj["class"]'>@msj["mesaj"]</div>}
+}
+
