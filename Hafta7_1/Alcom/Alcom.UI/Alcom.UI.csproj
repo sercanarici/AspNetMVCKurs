@@ -1352,6 +1352,7 @@
     <Content Include="Areas\Admin\Static\plugins\ckeditor\skins\moono\readme.md" />
     <Content Include="Areas\Admin\Static\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Areas\Admin\Static\plugins\input-mask\phone-codes\phone-codes.json" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2210,6 +2211,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriController.cs" />
     <Compile Include="Areas\Admin\Controllers\Marka.cs" />
     <Compile Include="Areas\Admin\Controllers\MarkaController.cs" />
